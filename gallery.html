@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kalle Kekomaki first portfolio website">
+    <meta name="author" content="Kalle Kekomaki">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>Kalle Kekomaki - Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" id="logo"><img src="img/logo-noborder.png" alt="logo"></a>
+            <a onclick="mobileMenu()" href="#" class="icon"><i class="fas fa-bars fa-2x"></i></a>
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a>
+                    <ul>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="animation.html">Animation</a></li>
+                        <li><a href="gallery.html">Nothing</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="photos">
+            <div class="container">
+
+                <div class="gallery">
+                    <div class="img">
+                        <img src="img/alchemy.gif" alt="random photo">
+                    </div>
+                    <div class="img">
+                        <img src="img/design-tools.jpg" alt="random photo">
+                    </div>
+                    <div class="img">
+                        <img src="img/alchemy.gif" alt="random photo">
+                    </div>
+                    <div class="img">
+                        <img src="img/design-tools.jpg" alt="random photo">
+                    </div>
+                    <div class="img">
+                        <img src="img/alchemy.gif" alt="random photo">
+                    </div>
+                    <div class="img">
+                        <img src="img/design-tools.jpg" alt="random photo">
+                    </div>
+                    <div class="img">
+                        <img src="img/alchemy.gif" alt="random photo">
+                    </div>
+                    <div class="img">
+                        <img src="img/design-tools.jpg" alt="random photo">
+                    </div>
+                    <div class="img">
+                        <img src="img/alchemy.gif" alt="random photo">
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="contact-box" id="contact">
+                <div class="left">
+                    <img src="img/contact-me.png" alt="contact me">
+                </div>
+                <div class="right">
+                    <h2>Contact me</h2>
+                    <h5>Name</h5>
+                    <input type="text" class="field" placeholder="your name">
+                    <h5>Email</h5>
+                    <input type="email" class="field" placeholder="your email">
+                    <h5>Phone</h5>
+                    <input type="text" class="field" placeholder="your phone number">
+                    <h5>Message</h5>
+                    <textarea class="field area" placeholder="tell me a secret"></textarea>
+                    <button class="btn">Submit</button>
+                </div>
+            </div>
+        </div>
+
+
+        <p class="copyright">Copyright &copy; Kalle Kekomaki 2020</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

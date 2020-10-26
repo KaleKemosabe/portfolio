@@ -3,11 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kalle Kekomaki first portfolio website">
+    <meta name="author" content="Kalle Kekomaki">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="icon" href="img/favicon.ico" />
     <title>Kalle Kekomaki - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+<!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- fonts - Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+<!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="#" id="logo"><img src="img/logo-noborder.png" alt="logo"></a>
+<!-- mobile menu - hamburger -->
+            <a onclick="mobileMenu()" href="#" class="icon"><i class="fas fa-bars fa-2x"></i></a>
+<!-- mobile menu - closing -->
+            <!-- <a onclick="mobileMenu()" href="#" class="icon"><i class="fas fa-times fa-2x"></i></a> -->
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a>
+                    <ul>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="animation.html">Animation</a></li>
+                        <li><a href="#">Nothing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="hero">
+            <div class="content">
+                <h1>Welcome to my portfolio website!</h1>
+                <h2 class="hero">I'm a Web Designer & Developer based in Helsinki, Finland</h2>
+                <!-- <button type="button" class="btn"><a href="#contact">Say Hello</a></button> -->
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About me</h2>
+                <!-- <div class="portrait"><img src="img/profile-pic1.jpg" alt="portrait"></div> -->
+                <p>Hello people! I'm versatile, reliable and focused on results with calm, common-sense approach to business challenges. I've gained a lot of valuable international experience by living and working in five different countries (Finland, Canada, New Zealand, Iceland and the Czech Republic) and have several years of experience from project management, business development, content marketing and customer service positions from all over the world. I'm currently studying in Helsinki Business College to become a competent Full Stack Developer with a focus on React & Node. </p>
+                <div class="social-media">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                    <i class="fab fa-twitter-square fa-3x"></i>
+                    <i class="fab fa-github-square fa-3x"></i>
+                    <i class="fab fa-instagram-square fa-3x"></i>
+<!-- codewars https://www.codewars.com/users/Kale%20Kemosabe -->
+                    <i class="fas fa-window-close fa-3x"></i>
+                </div>
+            </div>
+        </section>
+
+<!-- back to top button -->
+        <a href="#" class="to-top"><i class="fas fa-chevron-circle-up fa-4x"></i></a>
+
+<!-- services section cards -->
+        <section id="services">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="img/science.png" alt="development">
+                        <h3>Gallery</h3>
+                        <p>Natus quo rerum omnis nobis consectetur sapiente mollitia voluptatem! Repellendus.</p>
+                        <a href="gallery.html">See more</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/design-tools.jpg" alt="design">
+                        <h3>Animation</h3>
+                        <p>Natus quo rerum omnis nobis consectetur sapiente mollitia voluptatem! Repellendus.</p>
+                        <a href="animation.html">See more</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/alchemy.gif" alt="content">
+                        <h3>Nothing yet...</h3>
+                        <p>Natus quo rerum omnis nobis consectetur sapiente mollitia voluptatem! Repellendus.</p>
+                        <a href="#">Coming soon</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- skills section -->
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <h4>Software knowledge</h4>
+                <div class="progress-bars">
+    <!-- dev skills -->
+                    <div class="development">
+                        <h4>Coding</h4>
+                        <div class="skill">
+                            <h5>HTML</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>CSS</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>JavaScript</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>React</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+    <!-- design skills -->
+                    <div class="design">
+                        <h4>Design</h4>
+                        <div class="skill">
+                            <h5>Photoshop</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>InDesign</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>Figma and XD</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>Illustrator</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- projects slider -->
+        <section id="projects">
+            <div class="container">
+            <h2>Projects</h2>
+            <h5>Use arrow keys below to browse through some of the selected projects</h5>
+                <div class="title">
+                <div class="underline"></div>
+                </div>        
+    <!-- project preview image and details -->
+                <article class="preview">
+                <div class="img-container">
+                    <img src="img/contact-me.png" id="project-img" alt="project example image">
+                </div>
+                <h4 id="name">Random app</h4>
+                <p id="details">details</p>
+                <p id="info">info text</p>
+    <!-- prev next buttons-->
+                <div class="button-container">
+                    <button class="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="contact-box" id="contact">
+                <div class="left">
+                    <img src="img/contact-me.png" alt="contact me">
+                </div>
+    <!-- right side form -->
+                <div class="right">
+                    <h2>Contact me</h2>
+                    <h5>Name</h5>
+                    <input type="text" class="field" placeholder="your name">
+                    <h5>Email</h5>
+                    <input type="email" class="field" placeholder="your email">
+                    <h5>Phone</h5>
+                    <input type="text" class="field" placeholder="your phone number">
+                    <h5>Message</h5>
+                    <textarea class="field area" placeholder="tell me a secret"></textarea>
+                    <button class="btn">Submit</button>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Copyright &copy; Kalle Kekomaki 2020</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
