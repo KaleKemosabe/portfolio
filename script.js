@@ -23,35 +23,55 @@ const mobileMenu = () => {
   const projects = [
       {
         id: 1,
+        name: "Superhero Server",
+        img:
+        "img/superheroes.png",
+        text:
+        "In this project, I created a simple HTTP server with Node & Express.",
+      },
+      {
+        id: 2,
+        name: "Nature Quiz",
+        img:
+        "img/luontovisailu.png",
+        text:
+        "A simple quiz app created for a group of friends to decide who is the mastermind of our weekend hike. HTML, CSS, JS, Finnish only.",
+      },
+      {
+        id: 3,
+        name: "Platform Game",
+        img:
+        "img/platformer-game.png",
+        text:
+        "This was a group project. We created a multi-level platform game that's based on a book called Eloquent JavaScript by Marijn Haverbeke.",
+      },
+      {
+        id: 4,
         name: "Website Replication",
-        details: "Github URL - Coming soon...",
         img:
         "img/jobs-in-finland-final.png",
         text:
         "I did a complete website replication of a Jobs in Finland website by using HTML, CSS and JavaScript.",
       },
       {
-        id: 2,
+        id: 5,
         name: "Movie Search",
-        details: "Github URL - Coming soon...",
         img:
           "img/omdb-app.png",
         text:
         "In this project, I used Ajax with jQuery to search for movie information through OMDb API.",
       },
       {
-        id: 3,
+        id: 6,
         name: "Weather App",
-        details: "Github URL - Coming soon...",
         img:
         "img/weather-app.png",
         text:
         "Weather app was done by using OpenWeatherMap API and JavaScript fetch method.",
       },
       {
-        id: 4,
+        id: 7,
         name: "JavaScript Clock",
-        details: "Github URL - Coming soon...",
         img:
           "img/js-clock.png",
         text:
@@ -62,7 +82,7 @@ const mobileMenu = () => {
   // items selection
   const img = document.getElementById("project-img");
   const name = document.getElementById("name");
-  const details = document.getElementById("details");
+  // const details = document.getElementById("details");
   const info = document.getElementById("info");
     
   const prevBtn = document.querySelector(".prev-btn");
@@ -81,7 +101,7 @@ const mobileMenu = () => {
     const item = projects[project];
     img.src = item.img;
     name.textContent = item.name;
-    details.textContent = item.details;
+    // details.textContent = item.details;
     info.textContent = item.text;
   }
   

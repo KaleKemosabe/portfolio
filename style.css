@@ -185,7 +185,7 @@ header nav ul.mobilemenu {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url("/img/portrait-bg.jpg") no-repeat fixed center center/cover;
+  background: url("./img/portrait-bg.jpg") no-repeat fixed center center/cover;
 }
 
 #hero .content {
@@ -222,7 +222,7 @@ header nav ul.mobilemenu {
 
 #about {
   position: relative;
-  background: url("/img/portrait-bg.jpg") no-repeat fixed center center/cover;
+  background: url("./img/portrait-bg.jpg") no-repeat fixed center center/cover;
   padding-bottom: 2rem;
 }
 
@@ -331,6 +331,10 @@ header nav ul.mobilemenu {
   margin: 5rem auto;
 }
 
+#projects .container h5 {
+  padding: 1rem;
+}
+
 #projects .container .preview {
   padding: 1.5rem 2rem;
   text-align: center;
@@ -412,8 +416,11 @@ footer .container .contact-box .right .field {
   transition: 0.3s;
 }
 
+footer .container .contact-box .right .field:hover {
+  border: 2px solid var(--primary-highlight);
+}
+
 footer .container .contact-box .right .field:focus {
-  background-color: var(--primary-white);
   border: 2px solid var(--secondary-highlight);
 }
 
