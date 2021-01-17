@@ -23,11 +23,11 @@ const mobileMenu = () => {
   const projects = [
       {
         id: 1,
-        name: "Superhero Server",
+        name: "React Github Finder",
         img:
-        "img/superheroes.png",
+        "img/github-project.png",
         text:
-        "In this project, I created a simple HTTP server with Node & Express.",
+        "React app for getting Github user details (with Axios) and showcasing their details with public repos.",
       },
       {
         id: 2,
@@ -47,19 +47,19 @@ const mobileMenu = () => {
       },
       {
         id: 4,
-        name: "Website Replication",
+        name: "Website for a Theatre Group",
         img:
-        "img/jobs-in-finland-final.png",
+        "img/lvpa-project.png",
         text:
-        "I did a complete website replication of a Jobs in Finland website by using HTML, CSS and JavaScript.",
+        "I prepared a website template for a Latin theatre group by using CSS/Sass. Texts will be added during 2021.",
       },
       {
         id: 5,
-        name: "Movie Search",
+        name: "Superhero Server",
         img:
-          "img/omdb-app.png",
+        "img/superheroes.png",
         text:
-        "In this project, I used Ajax with jQuery to search for movie information through OMDb API.",
+        "In this project, I created a simple HTTP server with Node & Express.",
       },
       {
         id: 6,

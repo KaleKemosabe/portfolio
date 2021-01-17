@@ -185,7 +185,10 @@ header nav ul.mobilemenu {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url("./img/portrait-bg.jpg") no-repeat fixed center center/cover;
+  /* background: url("./img/portrait-bg.jpg") no-repeat fixed center center/cover; */
+  background: #333333
+    url("https://images.unsplash.com/photo-1489846986031-7cea03ab8fd0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80")
+    no-repeat center center/cover;
 }
 
 #hero .content {
@@ -222,8 +225,8 @@ header nav ul.mobilemenu {
 
 #about {
   position: relative;
-  background: url("./img/portrait-bg.jpg") no-repeat fixed center center/cover;
-  padding-bottom: 2rem;
+  background-color: var(--primary-text);
+  padding: 2rem 0;
 }
 
 #about .container p {
@@ -355,7 +358,7 @@ header nav ul.mobilemenu {
 #projects .container .prev-btn,
 #projects .container .next-btn {
   color: var(--primary-bg);
-  font-size: 2rem;
+  font-size: 3rem;
   background: transparent;
   border: transparent;
   margin: 0 0.5rem;
@@ -378,7 +381,7 @@ footer .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 6rem;
+  padding: 2rem 0;
   border-radius: 5px;
 }
 
@@ -392,7 +395,16 @@ footer .container .contact-box {
 }
 
 footer .container .contact-box .left img {
-  height: 25rem;
+  /* background: url("img/kalle-profile.jpg") no-repeat center center/cover; */
+  height: 20rem;
+  border-radius: 50%;
+  border: 5px solid var(--primary-highlight);
+  margin-right: 5rem;
+}
+
+footer .container .contact-box .left img:hover {
+  transform: scale(1.1);
+  /* background: url("img/kalle-profile-hover.jpg") no-repeat center center/cover; */
 }
 
 footer .container .contact-box .right {
@@ -513,12 +525,13 @@ footer .copyright {
   }
   footer .container .contact-box .left img {
     height: 20rem;
+    margin-right: 0;
   }
 }
 
 @media (max-width: 768px) {
   #about .container p {
-    padding: 1rem 1rem;
+    padding: 0;
   }
   #skills .container .progress-bars {
     grid-template-columns: 1fr;
@@ -530,9 +543,6 @@ footer .copyright {
   }
   #skills .container .progress-bars .design h4 {
     padding-top: 0;
-  }
-  #projects .container #project-img {
-    height: 25vh;
   }
 }
 
@@ -557,5 +567,6 @@ footer .copyright {
   }
   footer .container .contact-box .left img {
     height: 15rem;
+    margin-right: 0;
   }
 }
