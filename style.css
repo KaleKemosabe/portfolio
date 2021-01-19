@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
 :root {
   --primary-text: #101010;
   --primary-bg: #1f2123;
@@ -82,6 +84,7 @@ h5 {
   right: 2rem;
   opacity: 0;
   transition: 0.3s;
+  cursor: pointer;
   z-index: 100;
 }
 
@@ -102,12 +105,12 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 3rem;
+  padding: 2rem;
   z-index: 1000;
 }
 
 header nav img {
-  height: 3.5rem;
+  height: 3rem;
 }
 
 header nav ul {
@@ -185,31 +188,35 @@ header nav ul.mobilemenu {
   position: relative;
   width: 100%;
   min-height: 100vh;
+  padding-bottom: 2rem;
   /* background: url("./img/portrait-bg.jpg") no-repeat fixed center center/cover; */
   background: #333333
     url("https://images.unsplash.com/photo-1489846986031-7cea03ab8fd0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80")
-    no-repeat center center/cover;
+    no-repeat bottom center/cover;
 }
 
 #hero .content {
   color: var(--primary-white);
-  padding-left: 7rem;
+  text-align: center;
 }
 
 #hero .content h1 {
   position: relative;
-  padding: 50vh 0 3rem 0;
-  letter-spacing: 0.5rem;
+  padding: 50vh 0 1rem 0;
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 1rem;
+  font-size: 3rem;
   text-transform: uppercase;
 }
 
 #hero .content h1:after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 1rem;
+  left: 49.5%;
+  bottom: 0;
+  transform: translate(-50%);
   height: 0.5rem;
-  width: 15rem;
+  width: 16rem;
   border-radius: 5px;
   background-color: var(--primary-highlight);
 }
@@ -218,12 +225,32 @@ header nav ul.mobilemenu {
   font-weight: 300;
   font-size: 1.5rem;
   font-style: italic;
-  padding-bottom: 2rem;
+  padding: 1rem 0 2rem 0;
+}
+
+#hero .hero-container {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.1);
+  color: var(--primary-white);
+  margin-bottom: 2rem;
+}
+
+#hero .hero-container .about-text {
+  padding: 2rem 1rem 0 1rem;
+  text-align: center;
+}
+
+#hero .hero-container .cv-text {
+  text-align: center;
+}
+
+#hero .hero-container .btn {
+  margin: 0.5rem 0 2rem 0;
 }
 
 /**************** about me section *******************/
 
-#about {
+/* #about {
   position: relative;
   background-color: var(--primary-text);
   padding: 2rem 0;
@@ -236,7 +263,7 @@ header nav ul.mobilemenu {
 
 #about .container .btn {
   margin-bottom: 2rem;
-}
+} */
 
 /**************** services section *******************/
 
@@ -467,9 +494,6 @@ footer .copyright {
 /******************** @media queries *******************/
 
 @media (max-width: 1200px) {
-  header nav {
-    padding: 2rem 1rem;
-  }
   header nav .icon {
     display: block;
     padding-right: 1rem;
@@ -480,7 +504,7 @@ footer .copyright {
     padding: 2rem 1rem;
     width: 100%;
     top: 5rem;
-    left: 0;
+    text-align: center;
     background-color: var(--primary-white);
   }
   header nav ul li {
@@ -498,11 +522,8 @@ footer .copyright {
     top: 0;
   }
   header nav ul li ul li {
-    padding: 0 0 0 1rem;
-    text-align: left;
-  }
-  #hero .content {
-    padding-left: 1rem;
+    padding: 0;
+    text-align: center;
   }
 }
 
@@ -552,6 +573,9 @@ footer .copyright {
   }
   .container {
     border-radius: 0;
+  }
+  #hero .content h2 {
+    font-size: 1.2rem;
   }
 }
 

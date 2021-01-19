@@ -27,7 +27,7 @@
 <!-- mobile menu - closing -->
             <!-- <a onclick="mobileMenu()" href="#" class="icon"><i class="fas fa-times fa-2x"></i></a> -->
             <ul>
-                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#about">About</a></li> -->
                 <li><a href="#services">Services</a>
                     <!-- <ul>
                         <li><a href="#">Design</a></li>
@@ -45,18 +45,25 @@
     <main>
         <section id="hero">
             <div class="content">
-                <h1>Welcome to my portfolio website!</h1>
-                <h2 class="hero">I'm a Web Designer & Developer based in Helsinki, Finland</h2>
+                <h1>Hello</h1>
+                <h2 class="hero">I'm a Web Designer & Frontend Developer from Helsinki, Finland.</h2>
             </div>
-        </section>
-<!-- about me section -->
-        <section id="about">
-            <div class="container">
-                <h2>About me</h2>
-                <p>Hello people! I'm versatile, reliable and focused on results with calm, common-sense approach to business challenges. I've gained a lot of valuable international experience by living and working in five different countries (Finland, Canada, New Zealand, Iceland and the Czech Republic) and have several years of experience from project management, business development, content marketing and customer service positions from all over the world. I'm currently studying in Helsinki Business College to become a competent Full Stack Developer with a focus on React & Node. Tools and technologies I'm familiar with include HTML, CSS, Sass, Bootstrap, JavaScript, TypeScript, React & Redux, Node & Express, Adobe Photoshop, InDesign, Illustrator, Xd, Animate, Figma, Pipedrive, Trello, Miro</p>
+            <div class="container hero-container">
+                <p class="about-text">Welcome to my portfolio website! I'm currently studying in Helsinki Business College to become a competent Full-stack Developer with a focus on React & Node. Before I got into coding, I was living around the world and working mostly in different project management and customer service positions. 
+                    <!-- Tools and technologies I'm familiar with include HTML, CSS, Sass, Bootstrap, JavaScript, TypeScript, React & Redux, Node & Express, Adobe Photoshop, InDesign, Illustrator, Xd, Animate, Figma, Pipedrive, Trello, Miro -->
+                </p>
+                <p class="cv-text">If you want to keep your visit brief, here's my resume:</p>
                 <a class="btn" href="assets/kalle-kekomaki-cv2020.pdf" title="" download>Download CV</a>
             </div>
         </section>
+<!-- about me section -->
+        <!-- <section id="about">
+            <div class="container">
+                <h2>About me</h2>
+                <p>Welcome to my portfolio website! I'm currently studying in Helsinki Business College to become a competent Full-stack Developer with a focus on React & Node. Before I got into coding, I was living around the world and working mostly in different project management and customer service positions. Tools and technologies I'm familiar with include HTML, CSS, Sass, Bootstrap, JavaScript, TypeScript, React & Redux, Node & Express, Adobe Photoshop, InDesign, Illustrator, Xd, Animate, Figma, Pipedrive, Trello, Miro</p>
+                <a class="btn" href="assets/kalle-kekomaki-cv2020.pdf" title="" download>Download CV</a>
+            </div>
+        </section> -->
 <!-- back to top button -->
         <a href="#" class="to-top"><i class="fas fa-chevron-circle-up fa-4x"></i></a>
 <!-- services section cards -->
@@ -68,19 +75,19 @@
                         <img src="img/design-tools.jpg" alt="design">
                         <h3>Design</h3>
                         <p>In the past, I was mainly creating materials for event marketing campaigns. In recent years, I've been focusing mainly on web design.</p>
-                        <a href="#">See more <i>(Coming soon...)</i></a>
+                        <a href="#">Learn more <i>(Coming soon...)</i></a>
                     </div>
                     <div class="card">
                         <img src="img/science.png" alt="development">
                         <h3>Development</h3>
                         <p>I have a very customer-focused approach to web development and I understand the importance of good UI/UX design.</p>
-                        <a href="#">See more <i>(Coming soon...)</i></a>
+                        <a href="#">Learn more <i>(Coming soon...)</i></a>
                     </div>
                     <div class="card">
                         <img src="img/alchemy.gif" alt="content">
                         <h3>Content</h3>
                         <p>I've produced content and written articles mainly for events and tourism industry. Both print and digital. I'm also a keen photographer.</p>
-                        <a href="#">See more <i>(Coming soon...)</i></a>
+                        <a href="gallery.html">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -150,7 +157,7 @@
         <section id="projects">
             <div class="container">
             <h2>Projects</h2>
-            <h5>These are some of the projects I've been working on lately. Source code for the projects available in <a href="https://github.com/KaleKemosabe?tab=repositories" target="_blank">Github</a></h5>
+            <h5>These are some of the projects I've been working on lately. Source code available in <a href="https://github.com/KaleKemosabe?tab=repositories" target="_blank">Github</a></h5>
     <!-- project preview image and details -->
                 <article class="preview">
                 <div class="img-container">
@@ -181,16 +188,18 @@
                 </div>
     <!-- right side form -->
                 <div class="right">
-                    <h2>Contact me</h2>
-                    <h5>Name</h5>
-                    <input type="text" class="field" placeholder="your name">
-                    <h5>Email</h5>
-                    <input type="email" class="field" placeholder="your email">
-                    <h5>Phone</h5>
-                    <input type="text" class="field" placeholder="your phone number">
-                    <h5>Message</h5>
-                    <textarea class="field area" placeholder="tell me a secret"></textarea>
-                    <button class="btn">Submit</button>
+                    <form action="mailto:kalle.kekomaki@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
+                        <h2>Contact me</h2>
+                        <h5>Name</h5>
+                        <input type="text" class="field" placeholder="your name">
+                        <h5>Email</h5>
+                        <input type="email" class="field" placeholder="your email">
+                        <h5>Phone</h5>
+                        <input type="text" class="field" placeholder="your phone number">
+                        <h5>Message</h5>
+                        <textarea class="field area" placeholder="tell me a secret"></textarea>
+                        <button class="btn" type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>

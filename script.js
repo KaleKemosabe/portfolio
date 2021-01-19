@@ -23,14 +23,22 @@ const mobileMenu = () => {
   const projects = [
       {
         id: 1,
-        name: "React Github Finder",
+        name: "Superhero Server",
+        img:
+        "img/superheroes.png",
+        text:
+        "In this project, I created a simple HTTP server with Node & Express.",
+      },
+      {
+        id: 2,
+        name: "Github Finder",
         img:
         "img/github-project.png",
         text:
         "React app for getting Github user details (with Axios) and showcasing their details with public repos.",
       },
       {
-        id: 2,
+        id: 3,
         name: "Nature Quiz",
         img:
         "img/luontovisailu.png",
@@ -38,7 +46,7 @@ const mobileMenu = () => {
         "A simple quiz app created for a group of friends to decide who is the mastermind of our weekend hike. HTML, CSS, JS, Finnish only.",
       },
       {
-        id: 3,
+        id: 4,
         name: "Platform Game",
         img:
         "img/platformer-game.png",
@@ -46,20 +54,12 @@ const mobileMenu = () => {
         "This was a group project. We created a multi-level platform game that's based on a book called Eloquent JavaScript by Marijn Haverbeke.",
       },
       {
-        id: 4,
+        id: 5,
         name: "Website for a Theatre Group",
         img:
         "img/lvpa-project.png",
         text:
         "I prepared a website template for a Latin theatre group by using CSS/Sass. Texts will be added during 2021.",
-      },
-      {
-        id: 5,
-        name: "Superhero Server",
-        img:
-        "img/superheroes.png",
-        text:
-        "In this project, I created a simple HTTP server with Node & Express.",
       },
       {
         id: 6,
@@ -68,15 +68,15 @@ const mobileMenu = () => {
         "img/weather-app.png",
         text:
         "Weather app was done by using OpenWeatherMap API and JavaScript fetch method.",
-      },
-      {
-        id: 7,
-        name: "JavaScript Clock",
-        img:
-          "img/js-clock.png",
-        text:
-        "This analog clock was created with HTML/CSS/JavaScript",
-      },
+      }
+      // {
+      //   id: 7,
+      //   name: "JavaScript Clock",
+      //   img:
+      //     "img/js-clock.png",
+      //   text:
+      //   "This analog clock was created with HTML/CSS/JavaScript",
+      // },
   ];
   
   // items selection
@@ -122,3 +122,4 @@ const mobileMenu = () => {
     }
     showProject(currentItem);
   });
+
