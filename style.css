@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,800;1,400;1,800&display=swap");
 
 :root {
   --primary-text: #101010;
@@ -97,7 +97,7 @@ h5 {
 
 header nav {
   position: fixed;
-  background-color: var(--primary-text);
+  background-color: var(--primary-bg);
   top: 0;
   left: 0;
   width: 100%;
@@ -190,22 +190,25 @@ header nav ul.mobilemenu {
   min-height: 100vh;
   padding-bottom: 2rem;
   /* background: url("./img/portrait-bg.jpg") no-repeat fixed center center/cover; */
-  background: #333333
+  background: url("./img/man-bg.jpg") no-repeat fixed center center/cover;
+  /* background: #333333
     url("https://images.unsplash.com/photo-1489846986031-7cea03ab8fd0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80")
-    no-repeat bottom center/cover;
+    no-repeat bottom center/cover; */
 }
 
 #hero .content {
-  color: var(--primary-white);
+  color: var(--primary-bg);
   text-align: center;
 }
 
 #hero .content h1 {
   position: relative;
-  padding: 50vh 0 1rem 0;
-  font-family: "Alfa Slab One", cursive;
+  padding: 40vh 0 1rem 0;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 800;
   letter-spacing: 1rem;
   font-size: 3rem;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -229,9 +232,16 @@ header nav ul.mobilemenu {
 }
 
 #hero .hero-container {
-  background-color: rgba(0, 0, 0, 0.1);
+  /* background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.1);
-  color: var(--primary-white);
+  color: var(--primary-bg); */
+  /* with gradient */
+  background: rgb(31, 33, 35);
+  background: linear-gradient(
+    180deg,
+    rgba(31, 33, 35, 0.1) 0%,
+    rgba(51, 51, 51, 0.3) 60%
+  );
   margin-bottom: 2rem;
 }
 
@@ -349,6 +359,91 @@ header nav ul.mobilemenu {
 
 #skills .container .progress-bars .progress .progress-bar {
   background-color: var(--secondary-highlight);
+}
+
+/**************** timeline *******************/
+
+.timeline-title {
+  margin: 5rem 0;
+}
+
+.timeline-link {
+  color: var(--primary-highlight);
+}
+
+#timeline {
+  position: relative;
+  margin: 1rem auto;
+  padding: 3rem 0;
+  width: 992px;
+}
+
+#timeline:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #c5c5c5;
+}
+
+#timeline ul {
+  margin: 0;
+  padding: 0;
+}
+
+#timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 1.25rem 2.5rem;
+}
+
+#timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+#timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.timeline-content {
+  padding: 3.2rem 0 1rem 0;
+}
+
+#timeline ul li:nth-child(odd):before {
+  content: "";
+  position: absolute;
+  top: 5rem;
+  right: -9px;
+  width: 1rem;
+  height: 1rem;
+  background: var(--primary-highlight);
+  border-radius: 50%;
+}
+
+#timeline ul li:nth-child(even):before {
+  content: "";
+  position: absolute;
+  top: 5rem;
+  left: -6px;
+  width: 1rem;
+  height: 1rem;
+  background: var(--primary-highlight);
+  border-radius: 50%;
+}
+
+#timeline ul li h3 {
+  color: var(--primary-highlight);
+}
+
+#timeline ul li p {
+  margin: 10px 0 0;
+  padding: 0;
 }
 
 /**************** projects section *******************/
@@ -528,6 +623,9 @@ footer .copyright {
 }
 
 @media (max-width: 992px) {
+  #hero .content h1 {
+    padding: 35vh 0 1rem 0;
+  }
   #services .container .cards {
     flex-direction: column;
   }
@@ -540,6 +638,9 @@ footer .copyright {
   }
   #skills .container .progress-bars .progress {
     width: 15rem;
+  }
+  #timeline {
+    width: 100%;
   }
   footer .container .contact-box {
     grid-template-columns: 1fr;
@@ -565,6 +666,24 @@ footer .copyright {
   #skills .container .progress-bars .design h4 {
     padding-top: 0;
   }
+  #timeline {
+    width: 100%;
+  }
+  #timeline:before {
+    left: 1.45rem;
+  }
+  #timeline ul li:nth-child(odd),
+  #timeline ul li:nth-child(even) {
+    width: 100%;
+    text-align: left;
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+  }
+  #timeline ul li:nth-child(odd):before,
+  #timeline ul li:nth-child(even):before {
+    top: 5rem;
+    left: 1rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -580,9 +699,9 @@ footer .copyright {
 }
 
 @media (max-width: 420px) {
-  #hero .content h1 {
+  /* #hero .content h1 {
     padding: 40vh 0 3rem 0;
-  }
+  } */
   #about .container .social-media i {
     padding: 0 0.2rem 2rem 0.2rem;
   }

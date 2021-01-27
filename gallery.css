@@ -20,7 +20,7 @@
 /* parallax story */
 
 #scroll-section {
-  background-image: linear-gradient(to right, #f1f4f5, #dbf1fa);
+  background: url("./img/man-no-bg.jpg") no-repeat fixed left center/cover;
 }
 
 .about {
@@ -67,6 +67,11 @@
 
 .boxy img {
   width: 90%;
+  box-shadow: 2px 2px 25px 5px #333333;
+}
+
+#horizontal-banners img {
+  max-width: 100vw;
 }
 
 #full-concepts {
