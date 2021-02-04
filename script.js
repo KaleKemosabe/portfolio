@@ -3,8 +3,8 @@
 const mobileMenu = () => {
     const menu = document.querySelector('ul');
   
-    menu.classList.toggle('mobilemenu')
-  };
+    menu.classList.toggle('mobilemenu');
+};
   
   // **********back to top button*********
   const toTop = document.querySelector('.to-top');
