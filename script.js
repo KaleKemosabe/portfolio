@@ -23,19 +23,19 @@ const mobileMenu = () => {
   const projects = [
       {
         id: 1,
-        name: "Superhero Server",
-        img:
-        "img/superheroes.png",
-        text:
-        "In this project, I created a simple HTTP server with Node & Express.",
-      },
-      {
-        id: 2,
         name: "Github Finder",
         img:
         "img/github-project.png",
         text:
-        "React app for getting Github user details (with Axios) and showcasing their details with public repos.",
+        "React app for getting Github user details and showcasing their details with public repos (React Router, Hooks, Bootstrap, Axios).",
+      },
+      {
+        id: 2,
+        name: "Superhero Server",
+        img:
+        "img/superheroes.png",
+        text:
+        "Simple HTTP server with Node & Express.",
       },
       {
         id: 3,
@@ -43,7 +43,7 @@ const mobileMenu = () => {
         img:
         "img/luontovisailu.png",
         text:
-        "A simple quiz app created for a group of friends to decide who is the mastermind of our weekend hike. HTML, CSS, JS, Finnish only.",
+        "Quiz app created for a group of friends to decide who is the mastermind of our weekend hike. HTML, CSS, JS, Finnish only.",
       },
       {
         id: 4,
@@ -55,11 +55,11 @@ const mobileMenu = () => {
       },
       {
         id: 5,
-        name: "Website for a Theatre Group",
+        name: "Theatre group website",
         img:
         "img/lvpa-project.png",
         text:
-        "I prepared a website template for a Latin theatre group by using CSS/Sass. Texts will be added during 2021.",
+        "I prepared a website template for a Latin theatre group as CSS/Sass practice project. Texts will be added during 2021.",
       },
       {
         id: 6,
@@ -67,16 +67,24 @@ const mobileMenu = () => {
         img:
         "img/weather-app.png",
         text:
-        "Weather app was done by using OpenWeatherMap API and JavaScript fetch method.",
+        "Very simple weather app. Done by using OpenWeatherMap API and JavaScript fetch method.",
+      },
+      {
+        id: 7,
+        name: "Country App",
+        img:
+          "img/country-app.png",
+        text:
+        "React app. Using Axios to pull data from a REST API. Displaying European country info and providing search function to cover the rest of the world (by using fetch method and hooks)."
+      },
+      {
+        id: 8,
+        name: "Dark UX Blog",
+        img:
+          "img/dark-ux-project.png",
+        text:
+        "Made with React (still a private project for now). Will start blogging about UX design with a focus on dark design patterns. Blog's design related news via News API."
       }
-      // {
-      //   id: 7,
-      //   name: "JavaScript Clock",
-      //   img:
-      //     "img/js-clock.png",
-      //   text:
-      //   "This analog clock was created with HTML/CSS/JavaScript",
-      // },
   ];
   
   // items selection

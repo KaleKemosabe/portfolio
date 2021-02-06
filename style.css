@@ -2,7 +2,7 @@
 
 :root {
   --primary-text: #101010;
-  --primary-bg: #1f2123;
+  --primary-bg: #333333;
   --primary-white: #ffffff;
   --primary-highlight: #6bd0ff;
   --secondary-highlight: #3fa0ef;
@@ -193,28 +193,7 @@ header nav .close-icon {
   width: 100%;
   min-height: 100vh;
   padding-bottom: 2rem;
-  /* background: url("./img/portrait-bg.jpg") no-repeat fixed center center/cover; */
-  background: url("./img/man-bg.jpg") no-repeat fixed center center/cover;
-  /* background: #333333
-    url("https://images.unsplash.com/photo-1489846986031-7cea03ab8fd0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80")
-    no-repeat bottom center/cover; */
-
-  /* background: linear-gradient(-45deg, #1f2123, #6bd0ff, #1a74e2, #1f2123, 0.1);
-  background-size: 105% 105%;
-  animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */
+  background: url("./img/winter-colors.jpg") no-repeat fixed bottom center/cover;
 }
 
 #hero .content {
@@ -224,8 +203,8 @@ header nav .close-icon {
 
 #hero .content h1 {
   position: relative;
-  padding: 40vh 0 1rem 0;
-  font-family: "Merriweather Sans", sans-serif;
+  padding: 25rem 0 1rem 0;
+  /* font-family: "Merriweather Sans", sans-serif; */
   font-weight: 800;
   letter-spacing: 1rem;
   font-size: 3rem;
@@ -257,12 +236,13 @@ header nav .close-icon {
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.1);
   color: var(--primary-bg); */
   /* with gradient */
-  background: rgb(31, 33, 35);
+  background: rgb(255, 255, 255);
   background: linear-gradient(
     180deg,
-    rgba(31, 33, 35, 0.1) 0%,
-    rgba(51, 51, 51, 0.3) 60%
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.3) 60%
   );
+  box-shadow: 0 0 50px 30px rgba(255, 255, 255, 0.9);
   margin-bottom: 2rem;
 }
 
@@ -500,6 +480,10 @@ header nav .close-icon {
   margin: 5rem auto;
 }
 
+#projects .container a {
+  color: var(--primary-highlight);
+}
+
 #projects .container h5 {
   padding: 1rem;
 }
@@ -516,7 +500,7 @@ header nav .close-icon {
 }
 
 #projects .container #project-img {
-  height: 40vh;
+  max-height: 40vh;
   object-fit: cover;
   position: relative;
 }
@@ -564,7 +548,6 @@ footer .container .contact-box .left img {
   /* background: url("img/kalle-profile.jpg") no-repeat center center/cover; */
   height: 20rem;
   border-radius: 50%;
-  border: 5px solid var(--primary-highlight);
   margin-right: 5rem;
 }
 
@@ -677,14 +660,17 @@ footer .copyright {
     font-size: 2rem;
   }
   header nav .close-icon {
+    position: absolute;
     display: block;
-    margin-top: 5rem;
+    top: 2rem;
+    right: 2.2rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 992px) {
   #hero .content h1 {
-    padding: 35vh 0 1rem 0;
+    padding: 20rem 0 1rem 0;
   }
   #services .container .cards {
     flex-direction: column;
@@ -755,23 +741,43 @@ footer .copyright {
   .container {
     border-radius: 0;
   }
+  #hero .hero-container {
+    background: none;
+    box-shadow: none;
+  }
+  #hero .content h1 {
+    padding: 20rem 0 1rem 0;
+  }
   #hero .content h2 {
     font-size: 1.2rem;
+  }
+  #hero .hero-container .about-text,
+  #hero .hero-container .cv-text {
+    display: none;
   }
 }
 
 @media (max-width: 420px) {
-  /* #hero .content h1 {
-    padding: 40vh 0 3rem 0;
-  } */
+  #hero .content h1 {
+    padding: 15rem 0 1rem 0;
+  }
   #about .container .social-media i {
     padding: 0 0.2rem 2rem 0.2rem;
   }
   .to-top {
     display: none;
   }
+  #projects .container .preview {
+    padding: 0;
+  }
   footer .container .contact-box .left img {
     height: 15rem;
     margin-right: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  #hero .content h1 {
+    padding: 10rem 0 1rem 0;
   }
 }
