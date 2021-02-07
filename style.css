@@ -19,6 +19,7 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -192,7 +193,6 @@ header nav .close-icon {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  padding-bottom: 2rem;
   background: url("./img/winter-colors.jpg") no-repeat fixed bottom center/cover;
 }
 
@@ -203,8 +203,7 @@ header nav .close-icon {
 
 #hero .content h1 {
   position: relative;
-  padding: 25rem 0 1rem 0;
-  /* font-family: "Merriweather Sans", sans-serif; */
+  padding: 30vh 0 1rem 0;
   font-weight: 800;
   letter-spacing: 1rem;
   font-size: 3rem;
@@ -228,56 +227,27 @@ header nav .close-icon {
   font-weight: 300;
   font-size: 1.5rem;
   font-style: italic;
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
 }
 
 #hero .hero-container {
-  /* background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.1);
-  color: var(--primary-bg); */
-  /* with gradient */
-  background: rgb(255, 255, 255);
+  max-width: 50vw;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.3) 60%
+    rgba(255, 255, 255, 0.4) 60%
   );
   box-shadow: 0 0 50px 30px rgba(255, 255, 255, 0.9);
-  margin-bottom: 2rem;
 }
 
 #hero .hero-container .about-text {
+  text-align: center;
   padding: 3rem 1rem 0 1rem;
-  text-align: center;
-}
-
-#hero .hero-container .cv-text {
-  text-align: center;
+  font-size: 1rem;
 }
 
 #hero .hero-container .btn {
-  margin: 0.5rem 0 3rem 0;
-}
-
-/**************** about me section *******************/
-
-#about {
-  position: relative;
-  padding: 2rem 0;
-}
-
-#about .container {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    312deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(31, 33, 35, 0.5) 99%
-  );
-}
-
-#about .container p {
-  padding: 1rem 5rem 0 5rem;
-  text-align: center;
+  margin: 0.5rem 0 2rem 0;
 }
 
 /**************** services section *******************/
@@ -306,7 +276,6 @@ header nav .close-icon {
   border-radius: 0.2rem;
   box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.4);
   transform-style: preserve-3d;
-  line-height: 2;
 }
 
 #services .container .cards .card:hover {
@@ -666,12 +635,12 @@ footer .copyright {
     right: 2.2rem;
     font-size: 1rem;
   }
+  #hero .hero-container {
+    max-width: 80vw;
+  }
 }
 
 @media (max-width: 992px) {
-  #hero .content h1 {
-    padding: 20rem 0 1rem 0;
-  }
   #services .container .cards {
     flex-direction: column;
     justify-content: center;
@@ -700,6 +669,12 @@ footer .copyright {
 }
 
 @media (max-width: 768px) {
+  #hero .hero-container {
+    max-width: 95vw;
+  }
+  #hero .content h1 {
+    padding: 25vh 0 1rem 0;
+  }
   #about .container p {
     padding: 0;
   }
@@ -746,21 +721,17 @@ footer .copyright {
     box-shadow: none;
   }
   #hero .content h1 {
-    padding: 20rem 0 1rem 0;
+    padding: 40vh 0 1rem 0;
   }
   #hero .content h2 {
     font-size: 1.2rem;
   }
-  #hero .hero-container .about-text,
-  #hero .hero-container .cv-text {
+  #hero .hero-container .about-text {
     display: none;
   }
 }
 
 @media (max-width: 420px) {
-  #hero .content h1 {
-    padding: 15rem 0 1rem 0;
-  }
   #about .container .social-media i {
     padding: 0 0.2rem 2rem 0.2rem;
   }
@@ -773,11 +744,5 @@ footer .copyright {
   footer .container .contact-box .left img {
     height: 15rem;
     margin-right: 0;
-  }
-}
-
-@media (max-width: 350px) {
-  #hero .content h1 {
-    padding: 10rem 0 1rem 0;
   }
 }
